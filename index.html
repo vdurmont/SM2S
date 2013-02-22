@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Simple Mandrill Mail Sender</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="A simple mail sender using Mandrill API" />
+		<meta name="author" content="Dvins" />
+
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet" />
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!-- BEGIN fork me on github -->
+		<a href="https://github.com/you"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png" alt="Fork me on GitHub"></a>
+		<!-- END fork me on github -->
+		<div class="container">
+			<header>
+				<h1>– SM2S –</h1>
+				<h2>Simple Mandrill Mail Sender</h2>
+			</header>
+			<div id="results"></div>
+			<form class="form-mail">
+				<p>Simply fill out this form and click "send"!</p>
+				<input id="mandrill-api-key" type="text" class="input-block-level" placeholder="Your Mandrill API key" />
+				<input id="from-email" type="text" class="input-block-level" placeholder="Your email address" />
+				<input id="to-email" type="text" class="input-block-level" placeholder="Your recipient's email address" />
+				<input id="subject" type="text" class="input-block-level" placeholder="Your subject" />
+				<textarea id="message-area" class="input-block-level" placeholder="Your message"></textarea>
+				<button id="submit-button" class="btn btn-large btn-primary" onClick="window.submitMailForm(); return false;">Send</button>
+			</form>
+			<div class="footer">
+				<p><small>SM2S (Simple Mandrill Mail Sender) is a minimal web application  developed by <a href="http://vincent-durmont.com">Vincent Durmont</a>. It allows a user to send an email via the <a href="https://mandrill.com/" target="_blank">Mandrill</a> <a href="https://mandrillapp.com/api/docs/" target="_blank">API</a>.</small></p>
+			</div>
+		</div>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
+	</body>
+</html>
